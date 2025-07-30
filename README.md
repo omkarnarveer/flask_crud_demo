@@ -21,11 +21,6 @@ This is a simple Flask-based web application that performs CRUD (Create, Read, U
 flask_crud/
 │
 ├── app.py                  # Main Flask application
-├── static/            
-        ├──css/
-            ├──styles.css
-        ├──js/
-            ├──scripts.js
 ├── templates/              # HTML templates
     │    ├──includes/
     │          ├──_formhelpers.html
@@ -39,6 +34,10 @@ flask_crud/
 │   ├── add_item.html
 │   └── edit_item.html
 ├── static/                 # Static files (CSS, JS)
+        ├──css/
+            ├──styles.css
+        ├──js/
+            ├──scripts.js              
 ├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
 ```
