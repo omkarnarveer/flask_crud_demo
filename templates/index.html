@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Welcome to Flask CRUD</h1>
+      <p class="col-md-8 fs-4">This is a simple application demonstrating CRUD operations with user authentication.</p>
+    </div>
+  </div>
+
+  <h2>All Items</h2>
+  <hr>
+  <ul class="list-group">
+    {% for item in items %}
+      <li class="list-group-item">
+        <h4>{{ item.title }}</h4>
+        <small>Written by {{ item.author }} on {{ item.create_date.strftime('%Y-%m-%d') }}</small>
+        <p class="mt-2">{{ item.body | safe }}</p>
+      </li>
+    {% else %}
+      <p>{{ msg }}</p>
+    {% endfor %}
+  </ul>
+{% endblock %}
