@@ -21,7 +21,17 @@ This is a simple Flask-based web application that performs CRUD (Create, Read, U
 flask_crud/
 │
 ├── app.py                  # Main Flask application
+├── static/            
+        ├──css/
+            ├──styles.css
+        ├──js/
+            ├──scripts.js
 ├── templates/              # HTML templates
+    │    ├──includes/
+    │          ├──_formhelpers.html
+    │          ├──_navbar.html
+    │          ├──_messages.html
+│   │
 │   ├── index.html
 │   ├── login.html
 │   ├── register.html
